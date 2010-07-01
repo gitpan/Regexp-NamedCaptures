@@ -1,25 +1,27 @@
 ---
-name: Regexp-NamedCaptures
-version: 0.04
+abstract: 'Saves capture results to your own variables'
 author:
-  - '"Joshua ben Jore" <jjore@cpan.org>'
-abstract: Saves capture results to your own variables
+  - "\"Josh ben Jore\" <jjore@cpan.org>"
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
 license: perl
-resources:
-  license: http://dev.perl.org/licenses/
-requires:
-  Carp: 0
-  Text::Balanced: 0
-  perl: 5.7.1
-  strict: 0
-  warnings: 0
-recommends:
-  Params::Validate: 0
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Regexp-NamedCaptures
 provides:
   Regexp::NamedCaptures:
     file: lib/Regexp/NamedCaptures.pm
-    version: 0.04
-generated_by: Module::Build version 0.271
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+    version: 0.05
+recommends:
+  Params::Validate: 0
+requires:
+  Carp: 0
+  Text::Balanced: 0
+  perl: v5.7.1
+  strict: 0
+  warnings: 0
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.05
